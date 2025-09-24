@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 function Star({ rating, setRating }) {
 
-    const star_arr = [1, 2, 3, 4, 5]
+    const star_arr = [1, 2, 3, 4, 5];
     const [hover, setHover] = useState(0);
 
     return (
@@ -21,8 +21,7 @@ function Star({ rating, setRating }) {
                         onMouseEnter={() => setHover(star)}
                         onMouseLeave={() => setHover(0)}
                     >
-                        {' '}
-                        ★{' '}
+                        {' '}★{' '}
                     </span>
                 )
             })}
